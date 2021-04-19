@@ -151,8 +151,16 @@ body {
 }
 
 .motivation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin: 139px 0px 0px 170px;
+}
+
+.motivation-info {
   width: 540px;
-  height: 439px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,10 +168,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  margin: 139px 0px 0px 170px;
+  margin-top: 40px;
 }
 
-.motivation h1 {
+.motivation-info h1 {
   width: 531px;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
@@ -172,7 +180,7 @@ body {
   color: #99efd0;
 }
 
-.motivation > p {
+.motivation-info > p {
   width: 468px;
   font-family: 'Gilroy-SemiBold';
   font-size: 18px;
@@ -227,7 +235,7 @@ body {
   color: #8476aa;
 }
 
-.preview span {
+.preview a {
   margin: 6px 0px 0px 23px;
   font-family: 'Rubik', sans-serif;
   font-size: 14px;
@@ -236,10 +244,10 @@ body {
 }
 
 .men {
-  margin: 104px 0px 0px 20px;
+  margin: 0px 0px 0px 20px;
 }
 
-.logos {
+.brands {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,18 +256,18 @@ body {
   width: 1170px;
   height: 30px;
   margin: 0px auto;
+  opacity: 0.4;
 }
 
 .features {
   width: 100%;
-  height: 382px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   margin: 100px auto 0px auto;
-  background: url("../img/firstleft.png") 0 0/250px 380px no-repeat, url("../img/firstright.png") 100% 0/250px 380px no-repeat;
+  background: url("../img/firstleft.png") 0 0/20% 100% no-repeat, url("../img/firstright.png") 100% 0/20% 100% no-repeat;
 }
 
 .features .text {
@@ -614,7 +622,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 50px auto 0px auto;
-  background: #20224e;
+  background: #191d50;
+  border-radius: 5px;
 }
 
 .mailing .prompting h2 {
