@@ -5,6 +5,7 @@
 <title>Business</title>
 <link rel="stylesheet" href="css/style.css" />
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
 </head>
 
 <body>
@@ -13,31 +14,35 @@
 			<a href="#"><img src="img/icons/logo.png"></a>
 		</div>
 		<ul class="nav">
-			<li><a href="#">ABOUT</a></li>
-			<li><a href="#">GALLERY</a></li>
-			<li><a href="#">PRICING</a></li>
-			<li><a href="#">FAQ</a></li>
-			<li><a href="#">BENEFITS</a></li>
+			<li><a href="#" class="nav-item">ABOUT</a></li>
+			<li><a href="#" class="nav-item">GALLERY</a></li>
+			<li><a href="#" class="nav-item">PRICING</a></li>
+			<li><a href="#" class="nav-item">FAQ</a></li>
+			<li><a href="#" class="nav-item">BENEFITS</a></li>
 		</ul>
-		<form action="#" method="get" class="entry">
-			<button type="submit" class="login">SIGN IN</button>
-			<button type="submit" class="registration">SIGN UP</button>
-		</form>
+		<div class="entry">
+			<div class="login"><a href="#" class="login-link">SIGN IN</a></div>
+			<div class="registration"><a href="#" class="registration-link">SIGN UP</a></div>
+		</div>
 	</div>
 	<div class="main">
 		<div class="motivation">
 			<div class="motivation-info">
-				<h1>Many reasons to get up and start to get back in the business </h1>
-				<p>The harder you work for something, the greater you’ll feel when you achieve it.</p>
-				<form action="#" method="get" class="info">
-					<button type="submit" class="info__more">LEARN MORE</button>
-					<button type="submit" class="info__demo">DEMO</button>
-				</form>
+				<h1 class="motivation-title">Many reasons to get up and start to get back in the business </h1>
+				<p class="motivation-text">The harder you work for something, the greater you’ll feel when you achieve it.
+				</p>
+				<div class="info">
+					<div class="info-more"><a href="#" class="info-more-link">LEARN MORE</a></div>
+					<div class="info-demo"><a href="#" class="info-demo-link">DEMO</a></div>
+				</div>
 				<div class="preview">
 					<iframe src="https://www.youtube.com/embed/GT77G1loHsI" width="140px" height="80px" allowfullscreen
 						class="video">Ваш браузер не отображает плавающие фреймы</iframe>
-					<p>The harder you work for something, the greater you’ll feel when you achieve it.</p>
-					<a href="https://youtu.be/GT77G1loHsI" target="_blank">Watch preview</a>
+					<div class="preview-info">
+						<p class="preview-text">The harder you work for something, the greater you’ll feel when you achieve
+							it.</p>
+						<a href="https://youtu.be/GT77G1loHsI" target="_blank" class="preview-link">Watch preview</a>
+					</div>
 				</div>
 			</div>
 			<div class="men">

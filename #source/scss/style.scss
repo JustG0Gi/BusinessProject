@@ -8,122 +8,175 @@
 }
 // Файл обнуляющих стилей
 @import "_nullstyle";
+@import "_variables";
 
 body {
-	background: rgba(16, 17, 68, 1);
+	background: #101144;
 }
+
 .header {
-	width: 1100px;
-	margin: 79px auto 0px auto;
+	max-width: 1100px;
+	margin: 6% auto 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+
 	.nav {
-		width: 347px;
+		width: 33%;
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
 		margin: 0px 0px 0px 44px;
-			a {
+
+			.nav-item {
 				font-family: 'Gilroy-SemiBold';
-				color: rgba(181, 181, 181, 1);
+				color: #b5b5b5;
 		}
 	}
+
 	.entry {
+		display: flex;
+		flex-flow: wrap;
 		margin-left: auto;
-		button {
+
+		.login {
 			width: 112px;
 			height: 36px;
-			font-family: 'Rubik', sans-serif;
-		}
-		.login {
+			background: white;
 			margin-right: 20px;
-			color: rgba(242, 153, 74, 1);
-			border: 1px solid rgba(242, 153, 74, 1);
+			border: 1px solid #f2994a;
 			border-radius: 4px;
+			text-align: center;
+			padding-top: 10px;
 		}
+
+		.login-link {
+			font-family: 'Rubik', sans-serif;
+			color: #f2994a;
+		}
+
 		.registration {
-			background: rgba(242, 153, 74, 1);
+			width: 112px;
+			height: 36px;
+			background: #f2994a;
+			text-align: center;
+			padding-top: 11px;
+		}
+
+		.registration-link {
+			font-family: 'Rubik', sans-serif;
 			color: white;
 		}
 	}
 }
+
 .main {
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .motivation {
 	display: flex;
 	flex-flow: wrap;
-	margin: 139px 0px 0px 170px;
+	margin: 8% 0px 0px 13%;
+	
+   .men {
+	   margin: 0px 0px 0px 20px;
+   }
 }
+
 .motivation-info {
-	width: 540px;
+	width: 40%;
 	display: flex;
 	flex-flow: column wrap;
 	margin-top: 40px;
-	h1 {
-		width: 531px;
+
+	.motivation-title {
+		width: 95%;
 		font-family: 'Inter', sans-serif;
 		font-weight: bold;
 		font-size: 44px;
 		line-height: 50px;
-		color: rgba(153, 239, 208, 1);
+		color: #99efd0;
 	}
-	>p {
-		width: 468px;
+
+	.motivation-text {
+		width: 87%;
 		font-family: 'Gilroy-SemiBold';
 		font-size: 18px;
 		line-height: 22px;
-		margin: 19px 0px 0px 0px;
-		color: rgba(132, 118, 170, 1);
+		margin: 19px 0px 0px;
+		color: #8476aa;
+	}
+
+	.info {
+		margin: 40px 0px 0px 0px;
+		display: flex;
+
+		.info-demo {
+			border: 1px solid #f2994a;
+			border-radius: 4px;
+			background: #101144;
+			width: 112px;
+			height: 36px;
+			text-align: center;
+			padding-top: 11px;
+
+		}
+		.info-demo-link {
+			font-family: 'Rubik', sans-serif;
+			color: #f2994a;
+		}
+
+		.info-more {
+			margin-right: 20px;
+			background: rgba(242, 153, 74, 1);
+			border-radius: 4px;
+			width: 112px;
+			height: 36px;
+			text-align: center;
+			padding-top: 11px;
+
+		}
+		.info-more-link {
+			font-family: 'Rubik', sans-serif;
+			color: white;
+		}
+	}
+
+	.preview {
+		width: 95%;
+		margin: 60px 0px 0px 0px;
+		display: flex;
+		flex-flow: wrap;
+
+		.video {
+			width: 28%;
+		}
+
+		.preview-info {
+			width: 68%;
+		}
+	
+		.preview-text {
+			width: 100%;
+			margin: 0px 0px 10px 23px;
+			font-family: 'Rubik', sans-serif;
+			font-size: 16px;
+			line-height: 22px;
+			color: #8476aa;
+		}
+	
+		.preview-link {
+			margin: 0px 0px 0px 23px;
+			font-family: 'Rubik', sans-serif;
+			font-size: 14px;
+			line-height: 22px;
+			color: #6d6d78;
+		}
 	}
 }
-.info {
-	margin: 40px 0px 0px 0px;
-	button {
-		width: 112px;
-		height: 36px;
-		font-family: 'Rubik', sans-serif;
-	}
-	.info__demo {
-		color: rgba(242, 153, 74, 1);
-		border: 1px solid rgba(242, 153, 74, 1);
-		border-radius: 4px;
-		background: rgba(16, 17, 68, 1);
-	}
-	.info__more {
-		margin-right: 20px;
-		background: rgba(242, 153, 74, 1);
-		color: white;
-	}
-}
-.preview {
-	width: 540px;
-	height: 80px;
-	margin: 60px 0px 0px 0px;
-	display: flex;
-	flex-flow: column wrap;
-	p {
-		width: 380px;
-		height: 44px;
-		margin: 0px 0px 0px 23px;
-		font-family: 'Rubik', sans-serif;
-		font-size: 16px;
-		line-height: 22px;
-		color: rgba(132, 118, 170, 1);
-	}
-	a {
-		margin: 6px 0px 0px 23px;
-		font-family: 'Rubik', sans-serif;
-		font-size: 14px;
-		line-height: 22px;
-		color: rgba(109, 109, 120, 1);
-	}
-}
-.men {
-	margin: 0px 0px 0px 20px;
-}
+
 .brands {
 	display: flex;
 	justify-content: space-around;

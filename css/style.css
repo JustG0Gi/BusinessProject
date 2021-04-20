@@ -87,8 +87,8 @@ body {
 }
 
 .header {
-  width: 1100px;
-  margin: 79px auto 0px auto;
+  max-width: 1100px;
+  margin: 6% auto 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +102,7 @@ body {
 }
 
 .header .nav {
-  width: 347px;
+  width: 33%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,30 +115,46 @@ body {
   margin: 0px 0px 0px 44px;
 }
 
-.header .nav a {
+.header .nav .nav-item {
   font-family: 'Gilroy-SemiBold';
   color: #b5b5b5;
 }
 
 .header .entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
   margin-left: auto;
 }
 
-.header .entry button {
+.header .entry .login {
   width: 112px;
   height: 36px;
-  font-family: 'Rubik', sans-serif;
-}
-
-.header .entry .login {
+  background: white;
   margin-right: 20px;
-  color: #f2994a;
   border: 1px solid #f2994a;
   border-radius: 4px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.header .entry .login-link {
+  font-family: 'Rubik', sans-serif;
+  color: #f2994a;
 }
 
 .header .entry .registration {
+  width: 112px;
+  height: 36px;
   background: #f2994a;
+  text-align: center;
+  padding-top: 11px;
+}
+
+.header .entry .registration-link {
+  font-family: 'Rubik', sans-serif;
   color: white;
 }
 
@@ -156,11 +172,15 @@ body {
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  margin: 139px 0px 0px 170px;
+  margin: 8% 0px 0px 13%;
+}
+
+.motivation .men {
+  margin: 0px 0px 0px 20px;
 }
 
 .motivation-info {
-  width: 540px;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,8 +191,8 @@ body {
   margin-top: 40px;
 }
 
-.motivation-info h1 {
-  width: 531px;
+.motivation-info .motivation-title {
+  width: 95%;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 44px;
@@ -180,71 +200,85 @@ body {
   color: #99efd0;
 }
 
-.motivation-info > p {
-  width: 468px;
+.motivation-info .motivation-text {
+  width: 87%;
   font-family: 'Gilroy-SemiBold';
   font-size: 18px;
   line-height: 22px;
-  margin: 19px 0px 0px 0px;
+  margin: 19px 0px 0px;
   color: #8476aa;
 }
 
-.info {
+.motivation-info .info {
   margin: 40px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.info button {
-  width: 112px;
-  height: 36px;
-  font-family: 'Rubik', sans-serif;
-}
-
-.info .info__demo {
-  color: #f2994a;
+.motivation-info .info .info-demo {
   border: 1px solid #f2994a;
   border-radius: 4px;
   background: #101144;
+  width: 112px;
+  height: 36px;
+  text-align: center;
+  padding-top: 11px;
 }
 
-.info .info__more {
+.motivation-info .info .info-demo-link {
+  font-family: 'Rubik', sans-serif;
+  color: #f2994a;
+}
+
+.motivation-info .info .info-more {
   margin-right: 20px;
   background: #f2994a;
+  border-radius: 4px;
+  width: 112px;
+  height: 36px;
+  text-align: center;
+  padding-top: 11px;
+}
+
+.motivation-info .info .info-more-link {
+  font-family: 'Rubik', sans-serif;
   color: white;
 }
 
-.preview {
-  width: 540px;
-  height: 80px;
+.motivation-info .preview {
+  width: 95%;
   margin: 60px 0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
 }
 
-.preview p {
-  width: 380px;
-  height: 44px;
-  margin: 0px 0px 0px 23px;
+.motivation-info .preview .video {
+  width: 28%;
+}
+
+.motivation-info .preview .preview-info {
+  width: 68%;
+}
+
+.motivation-info .preview .preview-text {
+  width: 100%;
+  margin: 0px 0px 10px 23px;
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #8476aa;
 }
 
-.preview a {
-  margin: 6px 0px 0px 23px;
+.motivation-info .preview .preview-link {
+  margin: 0px 0px 0px 23px;
   font-family: 'Rubik', sans-serif;
   font-size: 14px;
   line-height: 22px;
   color: #6d6d78;
-}
-
-.men {
-  margin: 0px 0px 0px 20px;
 }
 
 .brands {
