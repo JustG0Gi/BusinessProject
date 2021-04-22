@@ -88,7 +88,7 @@ body {
 
 .header {
   width: 73%;
-  margin: 6% auto 0px;
+  margin: 6% auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,11 +112,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0px 0px 0px 5%;
+  margin: 0 0 0 5%;
 }
 
-.header .nav .nav-item {
-  font-family: "Gilroy-SemiBold";
+.header .nav-item {
+  font-family: "Gilroy-SemiBold", sans-serif;
   color: #b5b5b5;
 }
 
@@ -132,8 +132,7 @@ body {
 .header .entry .login {
   width: 112px;
   height: 36px;
-  background: white;
-  margin-right: 20px;
+  background: #fff;
   border: 1px solid #f2994a;
   border-radius: 4px;
   text-align: center;
@@ -143,6 +142,9 @@ body {
 .header .entry .login-link {
   font-family: "Rubik", sans-serif;
   color: #f2994a;
+  width: 112px;
+  height: 36px;
+  margin-right: 20px;
 }
 
 .header .entry .registration {
@@ -155,7 +157,9 @@ body {
 
 .header .entry .registration-link {
   font-family: "Rubik", sans-serif;
-  color: white;
+  color: #fff;
+  width: 112px;
+  height: 36px;
 }
 
 .main {
@@ -172,12 +176,16 @@ body {
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  margin: 8% 0px 0px 13%;
+  margin: 8% 0 0 13%;
 }
 
 .motivation .men {
-  margin: 0px 0px 0px 20px;
-  width: 50%;
+  margin: 0 0 0 20px;
+  width: 58%;
+}
+
+.motivation .men .men-img {
+  width: 100%;
 }
 
 .motivation-info {
@@ -203,21 +211,21 @@ body {
 
 .motivation-info .motivation-text {
   width: 87%;
-  font-family: "Gilroy-SemiBold";
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-size: 18px;
   line-height: 22px;
-  margin: 19px 0px 0px;
+  margin: 19px 0 0;
   color: #8476aa;
 }
 
 .motivation-info .info {
-  margin: 8% 0px 0px;
+  margin: 8% 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.motivation-info .info .info-demo {
+.motivation-info .info-demo {
   border: 1px solid #f2994a;
   border-radius: 4px;
   background: #101144;
@@ -227,13 +235,14 @@ body {
   padding-top: 11px;
 }
 
-.motivation-info .info .info-demo-link {
+.motivation-info .info-demo-link {
   font-family: "Rubik", sans-serif;
   color: #f2994a;
+  width: 112px;
+  height: 36px;
 }
 
-.motivation-info .info .info-more {
-  margin-right: 20px;
+.motivation-info .info-more {
   background: #f2994a;
   border-radius: 4px;
   width: 112px;
@@ -242,14 +251,17 @@ body {
   padding-top: 11px;
 }
 
-.motivation-info .info .info-more-link {
+.motivation-info .info-more-link {
   font-family: "Rubik", sans-serif;
-  color: white;
+  color: #fff;
+  width: 112px;
+  height: 36px;
+  margin-right: 20px;
 }
 
 .motivation-info .preview {
   width: 95%;
-  margin: 12% 0px 0px;
+  margin: 12% 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,21 +273,21 @@ body {
   width: 28%;
 }
 
-.motivation-info .preview .preview-info {
+.motivation-info .preview-info {
   width: 68%;
 }
 
-.motivation-info .preview .preview-text {
+.motivation-info .preview-text {
   width: 100%;
-  margin: 0px 0px 10px 23px;
+  margin: 0 0 10px 23px;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #8476aa;
 }
 
-.motivation-info .preview .preview-link {
-  margin: 0px 0px 0px 23px;
+.motivation-info .preview-link {
+  margin: 0 0 0 23px;
   font-family: "Rubik", sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -289,7 +301,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 80%;
-  margin: 0px auto;
+  margin: 0 auto;
   opacity: 0.4;
 }
 
@@ -330,7 +342,7 @@ body {
 
 .features .text .feature-text {
   width: 100%;
-  font-family: "Gilroy-SemiBold";
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #8476aa;
@@ -339,7 +351,7 @@ body {
 }
 
 .features .item-text {
-  font-family: "Gilroy-SemiBold";
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-size: 14px;
   line-height: 22px;
   color: #8476aa;
@@ -348,7 +360,7 @@ body {
 }
 
 .features .item-title {
-  font-family: "Gilroy-SemiBold";
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -374,7 +386,7 @@ body {
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   width: 27%;
-  margin: 40px auto 0px;
+  margin: 40px auto 0;
 }
 
 .plan {
@@ -396,7 +408,7 @@ body {
 
 .plan .text {
   width: 30%;
-  margin-right: 25px;
+  margin-right: 35px;
 }
 
 .plan .text .plan-title {
@@ -414,7 +426,7 @@ body {
 
 .plan .text .plan-text {
   width: 100%;
-  font-family: "Gilroy-SemiBold";
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-size: 15px;
   line-height: 22px;
   color: #8476aa;
@@ -422,13 +434,13 @@ body {
 }
 
 .plan .text .info {
-  margin: 8% 0px 0px;
+  margin: 8% 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.plan .text .info .info-more {
+.plan .text .info-more {
   margin-right: 20px;
   background: #f2994a;
   border-radius: 4px;
@@ -438,13 +450,21 @@ body {
   padding-top: 11px;
 }
 
-.plan .text .info .info-more-link {
+.plan .text .info-more-link {
   font-family: "Rubik", sans-serif;
-  color: white;
+  color: #fff;
+  width: 112px;
+  height: 36px;
 }
 
 .plan .img {
-  width: 30%;
+  width: 28%;
+  height: 100%;
+}
+
+.plan .img .plan-img {
+  width: 100%;
+  height: 100%;
 }
 
 .saving {
@@ -456,7 +476,7 @@ body {
       flex-flow: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 9% auto 0px;
+  margin: 9% auto 0;
 }
 
 .saving .text {
@@ -481,7 +501,7 @@ body {
 
 .saving .text .save-text {
   width: 33%;
-  font-family: "Gilroy-SemiBold";
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #8476aa;
@@ -492,7 +512,7 @@ body {
   width: 20%;
 }
 
-.saving .save-item .save-item-title {
+.saving .save-item-title {
   font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 36px;
@@ -501,8 +521,8 @@ body {
   text-align: center;
 }
 
-.saving .save-item .save-item-text {
-  font-family: "Gilroy-SemiBold";
+.saving .save-item-text {
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #8476aa;
@@ -519,12 +539,12 @@ body {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   width: 80%;
-  height: 550px;
-  margin: 9% auto 0px;
-  background: url("../img/points.png") 0 50%/100% 100% no-repeat;
+  padding: 2% 0 28%;
+  margin: 9% auto 0;
+  background: url("../img/points.png") 0 100%/100% 90% no-repeat;
 }
 
-.start .start-title {
+.start-title {
   font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 42px;
@@ -535,19 +555,18 @@ body {
   width: 80%;
 }
 
-.start .start-title .insert {
+.start-title .insert {
   color: #f2994a;
 }
 
 .start .info {
-  margin: 4% 0px 0px;
+  margin: 4% 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.start .info .info-more {
-  margin: 0 auto;
+.start .info-more {
   background: #f2994a;
   border-radius: 4px;
   width: 112px;
@@ -556,9 +575,12 @@ body {
   padding-top: 11px;
 }
 
-.start .info .info-more-link {
+.start .info-more-link {
   font-family: "Rubik", sans-serif;
-  color: white;
+  color: #fff;
+  margin: 0 auto;
+  width: 112px;
+  height: 36px;
 }
 
 .invest {
@@ -570,15 +592,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 30px 0;
   width: 100%;
-  height: 460px;
-  margin: 5% 0px 0px;
-  background: url("../img/land.png") 100% 0/45% 100% no-repeat;
+  margin: 5% 0 0;
+  background: url("../img/land.png") 100% 100%/45% 90% no-repeat;
 }
 
 .invest .text {
   width: 40%;
-  margin: 3% 3% 0 10%;
+  margin: 3% 0 0 8%;
 }
 
 .invest .text .invest-title {
@@ -596,21 +618,21 @@ body {
 
 .invest .text .invest-text {
   width: 75%;
-  font-family: "Gilroy-SemiBold";
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-size: 15px;
   line-height: 28px;
   color: #8476aa;
-  margin: 50px 0px;
+  margin: 50px 0;
 }
 
 .invest .text .info {
-  margin: 4% 0px 0px;
+  margin: 4% 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.invest .text .info .info-more {
+.invest .text .info-more {
   background: #f2994a;
   border-radius: 4px;
   width: 112px;
@@ -619,14 +641,21 @@ body {
   padding-top: 11px;
 }
 
-.invest .text .info .info-more-link {
+.invest .text .info-more-link {
   font-family: "Rubik", sans-serif;
-  color: white;
+  color: #fff;
+  width: 112px;
+  height: 36px;
 }
 
 .invest .img {
-  width: 35%;
-  height: 80%;
+  width: 28%;
+  height: 100%;
+}
+
+.invest .img .invest-img {
+  width: 100%;
+  height: 100%;
 }
 
 .help-info {
@@ -639,13 +668,18 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 6% 0px 0px 4%;
+  margin: 6% 0 0 4%;
   background: url("../img/tworight.png") 100% 50%/25% 100% no-repeat;
 }
 
 .help-info .img {
   width: 35%;
   height: 90%;
+}
+
+.help-info .img .help-info-img {
+  width: 100%;
+  height: 100%;
 }
 
 .help-info .text {
@@ -655,7 +689,7 @@ body {
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  margin: 7% 0px 0px 8%;
+  margin: 4% 0 0 8%;
 }
 
 .help-info .text .help-title {
@@ -668,7 +702,7 @@ body {
 
 .help-info .text .help-text {
   width: 70%;
-  font-family: "Gilroy-SemiBold";
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #8476aa;
@@ -676,19 +710,19 @@ body {
 
 .help-info .text .help-item {
   width: 40%;
-  margin: 20px 30px 0px 0px;
+  margin: 20px 30px 0 0;
 }
 
-.help-info .text .help-item .help-item-title {
+.help-info .text .help-item-title {
   font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 15px;
   color: #99efd0;
-  margin: 20px 0px 10px;
+  margin: 20px 0 10px;
 }
 
-.help-info .text .help-item .help-item-text {
-  font-family: "Gilroy-SemiBold";
+.help-info .text .help-item-text {
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #8476aa;
@@ -722,7 +756,7 @@ body {
   padding: 2.5% 0;
 }
 
-.mailing .prompting .prompting-title {
+.mailing .prompting-title {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 36px;
@@ -730,14 +764,14 @@ body {
   color: #f2994a;
 }
 
-.mailing .prompting .prompting-text {
+.mailing .prompting-text {
   width: 40%;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #95a1bb;
   text-align: center;
-  margin: 20px 0px 0px;
+  margin: 20px 0 0;
 }
 
 .mailing .prompting .info {
@@ -759,21 +793,21 @@ body {
   border: 0.1px solid #303162;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  color: #5a5a5a;
+  color: #8d8d8d;
 }
 
 .mailing .prompting .info .send {
   width: 29%;
   height: 46px;
   background: #f2994a;
-  color: white;
+  color: #fff;
   border: 0.1px solid #f2994a;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .mailing .prompting .spam {
-  font-family: "Gilroy-SemiBold";
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #8476aa;
@@ -793,13 +827,13 @@ body {
 
 .footer {
   width: 100%;
-  height: 582px;
+  padding: 80px 0 75px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  margin-top: 150px;
+  margin-top: 5%;
   background: url("../img/colorpoints.png") no-repeat;
 }
 
@@ -822,7 +856,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 15%;
-  margin: 40px 0px 0px auto;
+  margin: 40px 0 0 auto;
+}
+
+.footer .socials .social-img {
+  width: 40px;
+  height: 40px;
 }
 
 .footer .list {
@@ -854,15 +893,15 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   line-height: 20px;
-  color: white;
-  margin: 15px 0px 0px 0px;
+  color: #fff;
+  margin: 15px 0 0;
 }
 
 .footer .list .lead {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   line-height: 20px;
-  color: white;
+  color: #fff;
   font-weight: bold;
   margin-bottom: 30px;
 }

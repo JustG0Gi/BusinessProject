@@ -11,12 +11,12 @@
 @import "_variables";
 
 body {
-	background: #101144;
+	background: $blue;
 }
 
 .header {
 	width: 73%;
-	margin: 6% auto 0px;
+	margin: 6% auto 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -26,11 +26,11 @@ body {
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
-		margin: 0px 0px 0px 5%;
+		margin: 0 0 0 5%;
 
-			.nav-item {
-				font-family: $ff3;
-				color: #b5b5b5;
+			&-item {
+				font-family: $font-Gilroy;
+				color: $lightgray;
 		}
 	}
 
@@ -42,30 +42,34 @@ body {
 		.login {
 			width: 112px;
 			height: 36px;
-			background: white;
-			margin-right: 20px;
-			border: 1px solid $color1;
+			background: $white;
+			border: 1px solid $main-color;
 			border-radius: 4px;
 			text-align: center;
 			padding-top: 10px;
 		}
 
 		.login-link {
-			font-family: $ff2;
-			color: $color1;
+			font-family: $font-secondary;
+			color: $main-color;
+			width: 112px;
+			height: 36px;
+			margin-right: 20px;
 		}
 
 		.registration {
 			width: 112px;
 			height: 36px;
-			background: $color1;
+			background: $main-color;
 			text-align: center;
 			padding-top: 11px;
 		}
 
 		.registration-link {
-			font-family: $ff2;
-			color: white;
+			font-family: $font-secondary;
+			color: $white;
+			width: 112px;
+			height: 36px;
 		}
 	}
 }
@@ -78,11 +82,15 @@ body {
 .motivation {
 	display: flex;
 	flex-flow: wrap;
-	margin: 8% 0px 0px 13%;
+	margin: 8% 0 0 13%;
 	
    .men {
-	   margin: 0px 0px 0px 20px;
-		width: 50%;
+	   margin: 0 0 0 20px;
+		width: 58%;
+
+		.men-img {
+			width: 100%;
+		}
    }
 }
 
@@ -94,60 +102,64 @@ body {
 
 	.motivation-title {
 		width: 95%;
-		font-family: $ff1;
+		font-family: $font-main;
 		font-weight: bold;
 		font-size: 44px;
 		line-height: 50px;
-		color: $color2;
+		color: $main-text-color;
 	}
 
 	.motivation-text {
 		width: 87%;
-		font-family: $ff3;
+		font-family: $font-Gilroy;
 		font-size: 18px;
 		line-height: 22px;
-		margin: 19px 0px 0px;
-		color: $color3;
+		margin: 19px 0 0;
+		color: $secondary-text-color;
 	}
 
 	.info {
-		margin: 8% 0px 0px;
+		margin: 8% 0 0;
 		display: flex;
 
-		.info-demo {
-			border: 1px solid $color1;
+		&-demo {
+			border: 1px solid $main-color;
 			border-radius: 4px;
-			background: #101144;
+			background: $blue;
 			width: 112px;
 			height: 36px;
 			text-align: center;
 			padding-top: 11px;
 
 		}
-		.info-demo-link {
-			font-family: $ff2;
-			color: $color1;
+		&-demo-link {
+			font-family: $font-secondary;
+			color: $main-color;
+			width: 112px;
+			height: 36px;
 		}
 
-		.info-more {
+		&-more {
+			background: $main-color;
+			border-radius: 4px;
+			width: 112px;
+			height: 36px;
+			text-align: center;
+			padding-top: 11px;
+
+		}
+		&-more-link {
+			font-family: $font-secondary;
+			color: $white;
+			width: 112px;
+			height: 36px;
 			margin-right: 20px;
-			background: $color1;
-			border-radius: 4px;
-			width: 112px;
-			height: 36px;
-			text-align: center;
-			padding-top: 11px;
-
-		}
-		.info-more-link {
-			font-family: $ff2;
-			color: white;
 		}
 	}
 
 	.preview {
 		width: 95%;
-		margin: 12% 0px 0px;
+		margin: 12% 0 0;
 		display: flex;
 		flex-flow: wrap;
 
@@ -155,25 +167,25 @@ body {
 			width: 28%;
 		}
 
-		.preview-info {
+		&-info {
 			width: 68%;
 		}
 	
-		.preview-text {
+		&-text {
 			width: 100%;
-			margin: 0px 0px 10px 23px;
-			font-family: $ff2;
+			margin: 0 0 10px 23px;
+			font-family: $font-secondary;
 			font-size: 16px;
 			line-height: 22px;
-			color: $color3;
+			color: $secondary-text-color;
 		}
 	
-		.preview-link {
-			margin: 0px 0px 0px 23px;
-			font-family: $ff2;
+		&-link {
+			margin: 0 0 0 23px;
+			font-family: $font-secondary;
 			font-size: 14px;
 			line-height: 22px;
-			color: #6d6d78;
+			color: $gray;
 		}
 	}
 }
@@ -182,7 +194,7 @@ body {
 	display: flex;
 	justify-content: space-around;
 	width: 80%;
-	margin: 0px auto;
+	margin: 0 auto;
 	opacity: 0.4;
 }
 
@@ -204,41 +216,41 @@ body {
 
 	   .feature-title {
 		   width: 40%;
-		   font-family: $ff1;
+		   font-family: $font-main;
 		   font-weight: bold;
 		   font-size: 42px;
 		   line-height: 50px;
-		   color: $color2;
+		   color: $main-text-color;
 		   margin: 0 auto;
 		   text-align: center;
 	   }
 
 	   .feature-text {
 		   width: 100%;
-		   font-family: $ff3;
+		   font-family: $font-Gilroy;
 		   font-size: 16px;
 		   line-height: 22px;
-		   color: $color3;
+		   color: $secondary-text-color;
 		   margin: 20px auto;
 		   text-align: center;
 	   }
    }
 
 	.item-text {
-		font-family: $ff3;
+		font-family: $font-Gilroy;
 		font-size: 14px;
 		line-height: 22px;
-		color: $color3;
+		color: $secondary-text-color;
 		width: 90%;
 		margin-left: 20%;
 	}
 
 	.item-title {
-		font-family: $ff3;
+		font-family: $font-Gilroy;
 		font-weight: bold;
 		font-size: 18px;
 		line-height: 22px;
-		color: $color2;
+		color: $main-text-color;
 		width: 80%;
 		margin-left: 12%;
 	}
@@ -253,7 +265,7 @@ body {
 			display: flex;
 			flex-flow: wrap;
 			width: 27%;
-			margin: 40px auto 0px;
+			margin: 40px auto 0;
 		}
 	}
 }
@@ -269,37 +281,37 @@ body {
 
 	.text {
 		width: 30%;
-		margin-right: 25px;
+		margin-right: 35px;
 
 		.plan-title {
 			width: 100%;
-			font-family: $ff1;
+			font-family: $font-main;
 		   font-weight: bold;
 		   font-size: 42px;
 		   line-height: 50px;
-		   color: $color2;
+		   color: $main-text-color;
 
 			.insert {
-				color: $color1;
+				color: $main-color;
 			}
 		}
 
 		.plan-text {
 			width: 100%;
-			font-family: $ff3;
+			font-family: $font-Gilroy;
 		   font-size: 15px;
 		   line-height: 22px;
-		   color: $color3;
+		   color: $secondary-text-color;
 			margin-top: 10%;
 		}
       
       .info {
-			margin: 8% 0px 0px;
+			margin: 8% 0 0;
 			display: flex;
 
-			.info-more {
+			&-more {
 				margin-right: 20px;
-				background: $color1;
+				background: $main-color;
 				border-radius: 4px;
 				width: 112px;
 				height: 36px;
@@ -307,15 +319,23 @@ body {
 				padding-top: 11px;
 	
 			}
-			.info-more-link {
-				font-family: $ff2;
-				color: white;
+			&-more-link {
+				font-family: $font-secondary;
+				color: $white;
+				width: 112px;
+			   height: 36px;
 			}
 	   }
    }
 
 	.img {
-		width: 30%;
+		width: 28%;
+		height: 100%;
+
+		.plan-img {
+			width: 100%;
+			height: 100%;
+		}
 	}
 }
 
@@ -324,7 +344,7 @@ body {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-around;
-	margin: 9% auto 0px;
+	margin: 9% auto 0;
 
 	.text {
 		margin: 0 auto;
@@ -332,25 +352,25 @@ body {
 
 	   .save-title {
 		   width: 60%;
-		   font-family: $ff1;
+		   font-family: $font-main;
 		   font-weight: bold;
 		   font-size: 36px;
 		   line-height: 42px;
-		   color: $color2;
+		   color: $main-text-color;
 		   text-align: center;
 		   margin: 0 auto;
 
 		      .insert {
-			      color: $color1;
+			      color: $main-color;
 		      }
 	   }
 
 	   .save-text {
 		   width: 33%;
-		   font-family: $ff3;
+		   font-family: $font-Gilroy;
 		   font-size: 15px;
 		   line-height: 20px;
-		   color: $color3;
+		   color: $secondary-text-color;
 		   margin: 3% auto 6%;
 	   }
    }	
@@ -358,20 +378,20 @@ body {
    .save-item {
 	   width: 20%;
 
-	   .save-item-title {
-		   font-family: $ff1;
+	   &-title {
+		   font-family: $font-main;
 		   font-weight: bold;
 		   font-size: 36px;
 		   line-height: 42px;
-		   color: $color2;
+		   color: $main-text-color;
 		   text-align: center;
 	   }
 
-	   .save-item-text {
-		font-family: $ff3;
+	   &-text {
+		font-family: $font-Gilroy;
 		font-size: 15px;
 		line-height: 20px;
-		color: $color3;
+		color: $secondary-text-color;
 		text-align: center;
 		margin-top: 20px;
 	   }
@@ -382,32 +402,31 @@ body {
 	display: flex;
 	flex-flow:column wrap;
 	width: 80%;
-	height: 550px;
-	margin: 9% auto 0px;
-	background: url('../img/points.png')0 50%/100% 100% no-repeat;
+	padding: 2% 0 28%;
+	margin: 9% auto 0;
+	background: url('../img/points.png')0 100%/100% 90% no-repeat;
 
-	.start-title {
-		font-family: $ff1;
+	&-title {
+		font-family: $font-main;
 		font-weight: bold;
 		font-size: 42px;
 		line-height: 50px;
-		color: $color2;
+		color: $main-text-color;
 		text-align: center;
 		margin: 0 auto;
 		width: 80%;
 
 		.insert {
-			color: $color1;
+			color: $main-color;
 		}
 	}
 	
 	.info {
-		margin: 4% 0px 0px;
+		margin: 4% 0 0;
 		display: flex;
 
-		.info-more {
-			margin: 0 auto;
-			background: $color1;
+		&-more {
+			background: $main-color;
 			border-radius: 4px;
 			width: 112px;
 			height: 36px;
@@ -415,9 +434,12 @@ body {
 			padding-top: 11px;
 
 		}
-		.info-more-link {
-			font-family: $ff2;
-			color: white;
+		&-more-link {
+			font-family: $font-secondary;
+			color: $white;
+			margin: 0 auto;
+			width: 112px;
+			height: 36px;
 		}
 	}
 
@@ -426,60 +448,67 @@ body {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: center;
+	padding: 30px 0;
 	width: 100%;
-	height: 460px;
-	margin: 5% 0px 0px;
-	background: url('../img/land.png') 100% 0/45% 100% no-repeat;
+	margin: 5% 0 0;
+	background: url('../img/land.png') 100% 100%/45% 90% no-repeat;
 
 	.text {
 		width: 40%;
-		margin:3% 3% 0 10%;
+		margin:3% 0 0 8%;
 
 	   .invest-title {
 		   width: 80%;
-		   font-family: $ff1;
+		   font-family: $font-main;
 		   font-weight: bold;
 		   font-size: 42px;
 		   line-height: 50px;
-		   color: $color2;
+		   color: $main-text-color;
 	   }
 
 	   .insert {
-		   color: $color1;
+		   color: $main-color;
 	   }
 
 	   .invest-text {
 		   width: 75%;
-		   font-family: $ff3;
+		   font-family: $font-Gilroy;
 		   font-size: 15px;
 		   line-height: 28px;
-		   color: $color3;
-		   margin: 50px 0px;
+		   color: $secondary-text-color;
+		   margin: 50px 0;
 	   }
 
 		.info {
-			margin: 4% 0px 0px;
+			margin: 4% 0 0;
 			display: flex;
 	
-			.info-more {
-				background: $color1;
+			&-more {
+				background: $main-color;
 				border-radius: 4px;
 				width: 112px;
 				height: 36px;
 				text-align: center;
 				padding-top: 11px;
-	
 			}
-			.info-more-link {
-				font-family: $ff2;
-				color: white;
+
+			&-more-link {
+				font-family: $font-secondary;
+				color: $white;
+				width: 112px;
+				height: 36px;
 			}
       }
 	}
 
    .img {
-	   width: 35%;
-	   height: 80%;
+	   width: 28%;
+	   height: 100%;
+
+		.invest-img {
+			width: 100%;
+			height: 100%;
+		}
    }
 }
 
@@ -488,53 +517,58 @@ body {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: center;
-	margin: 6% 0px 0px 4%;
+	margin: 6% 0 0 4%;
 	background: url('../img/tworight.png') 100% 50%/25% 100% no-repeat;
 
 	.img {
 		width: 35%;
 		height: 90%;
+
+		.help-info-img {
+			width: 100%;
+			height: 100%;
+		}
 	}
 
 	.text {
 		width: 40%;
 		display: flex;
 		flex-flow: wrap;
-		margin: 7% 0px 0px 8%;
+		margin: 4% 0 0 8%;
 
 	   .help-title {
-			font-family: $ff1;
+			font-family: $font-main;
 		   font-weight: bold;
 		   font-size: 26px;
 		   line-height: 32px;
-		   color: $color2;
+		   color: $main-text-color;
 		}
 
 		.help-text {
 			width: 70%;
-			font-family: $ff3;
+			font-family: $font-Gilroy;
 		   font-size: 15px;
 		   line-height: 20px;
-		   color: $color3;
+		   color: $secondary-text-color;
 		}
 
 		.help-item {
 			width: 40%;
-			margin: 20px 30px 0px 0px;
+			margin: 20px 30px 0 0;
 
-			.help-item-title {
-				font-family: $ff1;
+			&-title {
+				font-family: $font-main;
 		      font-weight: bold;
 		      font-size: 15px;
-		      color: $color2;
-				margin: 20px 0px 10px;
+		      color: $main-text-color;
+				margin: 20px 0 10px;
 			}
 
-			.help-item-text {
-				font-family: $ff3;
+			&-text {
+				font-family: $font-Gilroy;
 		      font-size: 15px;
 		      line-height: 20px;
-		      color: $color3;
+		      color: $secondary-text-color;
 				width: 95%;
 			}
 		}
@@ -552,26 +586,26 @@ body {
 	   align-items: center;
 	   justify-content: center;
 	   margin: 50px auto 0;
-	   background: #191d50;
+	   background: $darkblue;
 	   border-radius: 5px;
 	   padding: 2.5% 0;
 
-	   .prompting-title {
-		   font-family: $ff2;
+	   &-title {
+		   font-family: $font-secondary;
 		   font-weight: 500;
 		   font-size: 36px;
 		   line-height: 43px;
-		   color: $color1;
+		   color: $main-color;
 	   }
 
-	   .prompting-text {
+	   &-text {
 		   width: 40%;
-		   font-family: $ff2;
+		   font-family: $font-secondary;
 		   font-size: 16px;
 		   line-height: 22px;
-		   color: #95a1bb;
+		   color: $gray-blue;
 		   text-align: center;
-		   margin: 20px 0px 0px;
+		   margin: 20px 0 0;
 	   }
 
 	   .info {
@@ -584,30 +618,30 @@ body {
 		   .mail {
 			   width: 71%;
 			   height: 46px;
-			   background: #303162;
+			   background: $blue-gray;
 			   padding: 10px;
-			   border: 0.1px solid #303162;
+			   border: 0.1px solid $blue-gray;
 			   border-top-left-radius: 5px;
 			   border-bottom-left-radius: 5px;
-			   color: #5a5a5a;
+			   color: $darkgray;
 		   }
 
 		   .send {
 			   width: 29%;
 			   height: 46px;
-		      background: $color1;
-		      color: white;
-			   border: 0.1px solid $color1;
+		      background: $main-color;
+		      color: $white;
+			   border: 0.1px solid $main-color;
 			   border-top-right-radius: 5px;
 			   border-bottom-right-radius: 5px;
 		   }
 	   }
 
 	   .spam {
-		   font-family: $ff3;
+		   font-family: $font-Gilroy;
 		   font-size: 14px;
 		   line-height: 20px;
-		   color: $color3;
+		   color: $secondary-text-color;
 			margin-top: 15px;
 	   }
    }
@@ -623,18 +657,18 @@ body {
 
 .footer {
 	width: 100%;
-	height: 582px;
+	padding: 80px 0 75px 0;
 	display: flex;
 	flex-flow: wrap;
-	margin-top: 150px;
+	margin-top: 5%;
 	background: url('../img/colorpoints.png') no-repeat;
 
 	.caption {
-		font-family: $ff1;
+		font-family: $font-main;
 		font-weight: bold;
 		font-size: 26px;
 		line-height: 32px;
-		color: $color1;
+		color: $main-color;
 		margin: 40px 0 0;
 	}
 
@@ -643,7 +677,12 @@ body {
 		flex-flow: wrap;
 		justify-content: space-between;
 		width: 15%;
-		margin: 40px 0px 0px auto;
+		margin: 40px 0 0 auto;
+
+		.social-img {
+			width: 40px;
+			height: 40px;
+		}
 	}
 
 	.list {
@@ -660,19 +699,19 @@ body {
 			margin: 0 20px;
 
 			.page-item {
-				font-family: $ff1;
+				font-family: $font-main;
 				font-size: 15px;
 		      line-height: 20px;
-				color: white;
-				margin: 15px 0px 0px 0px;
+				color: $white;
+				margin: 15px 0 0;
 			}
 		}
 
 		.lead {
-			font-family: $ff1;
+			font-family: $font-main;
 			font-size: 15px;
 		   line-height: 20px;
-			color: white;
+			color: $white;
 			font-weight: bold;
 			margin-bottom: 30px;
 		}
@@ -683,7 +722,7 @@ body {
 		flex-flow: wrap;
 		justify-content: space-around;
 		width: 40%;
-		color: #8d8d8d;
+		color: $darkgray;
 		margin: 9% auto 0;
 	}
 }
