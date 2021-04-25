@@ -540,8 +540,9 @@ body {
 
 		.vector {
 			position: absolute;
-			left: -60px;
-			bottom: -20px;
+			left: -50px;
+			bottom: -5px;
+			width: 20%;
 		}
    }
 }
@@ -558,9 +559,13 @@ body {
 		height: 55%;
 		background: $white;
 		padding: 15px;
+		border-bottom-left-radius: 9px;
+		border-bottom-right-radius: 9px;
+		position: relative;
 
 		.text {
 			width: 90%;
+
 			.data-title {
 				font-family: $font-main;
 				font-size: 18px;
@@ -585,20 +590,53 @@ body {
 				opacity: 0.5;
 				margin: 2% 0 5% 0;
 			}
+		}
 
-			.increment {
-				display: flex;
-				flex-flow: wrap;
-				width: 100%;
+		.increment {
+			display: flex;
+			flex-flow: wrap;
+			justify-content: space-between;
+			width: 82%;
+			margin: 10% 8% 0;
+			padding-top: 10%;
+			border-top: 1px solid lightgray;
 
-				&-item {
-					width: 20%;
+			&-item {
+				width: 25%;
 
-					&-title {
-						font-family: $font-main;
-						font-weight: bold;
-					}
+				&-title {
+					font-family: $font-main;
+					font-weight: bold;
 				}
+
+				&-text {
+					font-family: $font-secondary;
+					opacity: 0.5;
+				}
+			}
+		}
+
+		.popup {
+			width: 44%;
+			background: $popup-color;
+			padding: 7%;
+			border-bottom-right-radius: 5px;
+			border-top-right-radius: 5px;
+			position: absolute;
+			top: 25%;
+			left: 100%;
+			color: $white;
+
+			&-title {
+				font-family: $font-main;
+				font-weight: bold;
+				font-size: 15px;
+				margin: 0 0 4% 0;
+			}
+
+			&-text {
+				font-family: $font-secondary;
+				font-size: 10px;
 			}
 		}
 	}

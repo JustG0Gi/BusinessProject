@@ -688,8 +688,9 @@ body {
 
 .invest .img .vector {
   position: absolute;
-  left: -60px;
-  bottom: -20px;
+  left: -50px;
+  bottom: -5px;
+  width: 20%;
 }
 
 .meta {
@@ -710,6 +711,9 @@ body {
   height: 55%;
   background: #fff;
   padding: 15px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  position: relative;
 }
 
 .meta .data .text {
@@ -741,22 +745,57 @@ body {
   margin: 2% 0 5% 0;
 }
 
-.meta .data .text .increment {
+.meta .data .increment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 82%;
+  margin: 10% 8% 0;
+  padding-top: 10%;
+  border-top: 1px solid lightgray;
 }
 
-.meta .data .text .increment-item {
-  width: 20%;
+.meta .data .increment-item {
+  width: 25%;
 }
 
-.meta .data .text .increment-item-title {
+.meta .data .increment-item-title {
   font-family: "Inter", sans-serif;
   font-weight: bold;
+}
+
+.meta .data .increment-item-text {
+  font-family: "Rubik", sans-serif;
+  opacity: 0.5;
+}
+
+.meta .data .popup {
+  width: 44%;
+  background: #516EA9;
+  padding: 7%;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  top: 25%;
+  left: 100%;
+  color: #fff;
+}
+
+.meta .data .popup-title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 0 4% 0;
+}
+
+.meta .data .popup-text {
+  font-family: "Rubik", sans-serif;
+  font-size: 10px;
 }
 
 .help-info {
