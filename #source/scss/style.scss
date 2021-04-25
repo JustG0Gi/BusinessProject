@@ -47,6 +47,10 @@ body {
 			border-radius: 4px;
 			text-align: center;
 			padding-top: 10px;
+
+			&:hover {
+				background: $purple;
+			}
 		}
 
 		.login-link {
@@ -63,6 +67,10 @@ body {
 			background: $main-color;
 			text-align: center;
 			padding-top: 11px;
+
+			&:hover {
+				background: $green;
+			}
 		}
 
 		.registration-link {
@@ -131,6 +139,10 @@ body {
 			text-align: center;
 			padding-top: 11px;
 
+			&:hover {
+				background: $white;
+			}
+
 		}
 		&-demo-link {
 			font-family: $font-secondary;
@@ -146,6 +158,10 @@ body {
 			height: 36px;
 			text-align: center;
 			padding-top: 11px;
+
+			&:hover {
+				background: $green;
+			}
 
 		}
 		&-more-link {
@@ -317,6 +333,10 @@ body {
 				height: 36px;
 				text-align: center;
 				padding-top: 11px;
+
+				&:hover {
+					background: $green;
+				}
 	
 			}
 			&-more-link {
@@ -433,6 +453,10 @@ body {
 			text-align: center;
 			padding-top: 11px;
 
+			&:hover {
+				background: $green;
+			}
+
 		}
 		&-more-link {
 			font-family: $font-secondary;
@@ -455,7 +479,7 @@ body {
 
 	.text {
 		width: 40%;
-		margin:3% 0 0 8%;
+		margin:3% 4% 0 8%;
 
 	   .invest-title {
 		   width: 80%;
@@ -476,7 +500,7 @@ body {
 		   font-size: 15px;
 		   line-height: 28px;
 		   color: $secondary-text-color;
-		   margin: 50px 0;
+		   margin: 10% 0;
 	   }
 
 		.info {
@@ -490,6 +514,10 @@ body {
 				height: 36px;
 				text-align: center;
 				padding-top: 11px;
+
+				&:hover {
+					background: $green;
+				}
 			}
 
 			&-more-link {
@@ -502,14 +530,78 @@ body {
 	}
 
    .img {
-	   width: 28%;
-	   height: 100%;
+	   height: 45%;
+		position: relative;
 
 		.invest-img {
-			width: 100%;
+			width: 60%;
 			height: 100%;
 		}
+
+		.vector {
+			position: absolute;
+			left: -60px;
+			bottom: -20px;
+		}
    }
+}
+
+.meta {
+	width: 28%;
+	height: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	margin: 0 3% 0 0;
+
+	.data {
+		width: 60%;
+		height: 55%;
+		background: $white;
+		padding: 15px;
+
+		.text {
+			width: 90%;
+			.data-title {
+				font-family: $font-main;
+				font-size: 18px;
+				font-weight: bold;
+				margin: 0 0 2% 0;
+			}
+
+			.data-text {
+				opacity: 0.5;
+			}
+
+			.total {
+				font-family: $font-main;
+				font-size: 24px;
+				color: $green;
+				margin: 13% 0 0;
+			}
+
+			.request {
+				font-family: $font-secondary;
+				font-size: 15px;
+				opacity: 0.5;
+				margin: 2% 0 5% 0;
+			}
+
+			.increment {
+				display: flex;
+				flex-flow: wrap;
+				width: 100%;
+
+				&-item {
+					width: 20%;
+
+					&-title {
+						font-family: $font-main;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
 }
 
 .help-info {
@@ -619,6 +711,7 @@ body {
 			   width: 71%;
 			   height: 46px;
 			   background: $blue-gray;
+				font-family: $font-secondary;
 			   padding: 10px;
 			   border: 0.1px solid $blue-gray;
 			   border-top-left-radius: 5px;
@@ -634,6 +727,10 @@ body {
 			   border: 0.1px solid $main-color;
 			   border-top-right-radius: 5px;
 			   border-bottom-right-radius: 5px;
+
+				&:hover {
+					background: $green;
+				}
 		   }
 	   }
 
@@ -657,10 +754,10 @@ body {
 
 .footer {
 	width: 100%;
-	padding: 80px 0 75px 0;
+	padding: 50px 0 50px 0;
 	display: flex;
 	flex-flow: wrap;
-	margin-top: 5%;
+	margin-top: 7%;
 	background: url('../img/colorpoints.png') no-repeat;
 
 	.caption {
@@ -690,7 +787,7 @@ body {
 		flex-flow: wrap;
 		justify-content: space-between;
 		width: 100%;
-		margin: 50px auto 0;
+		margin: 10% auto 0;
 
 		.pages {
 			display: flex;

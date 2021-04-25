@@ -139,6 +139,10 @@ body {
   padding-top: 10px;
 }
 
+.header .entry .login:hover {
+  background: #8476aa;
+}
+
 .header .entry .login-link {
   font-family: "Rubik", sans-serif;
   color: #f2994a;
@@ -153,6 +157,10 @@ body {
   background: #f2994a;
   text-align: center;
   padding-top: 11px;
+}
+
+.header .entry .registration:hover {
+  background: #13C296;
 }
 
 .header .entry .registration-link {
@@ -235,6 +243,10 @@ body {
   padding-top: 11px;
 }
 
+.motivation-info .info-demo:hover {
+  background: #fff;
+}
+
 .motivation-info .info-demo-link {
   font-family: "Rubik", sans-serif;
   color: #f2994a;
@@ -249,6 +261,10 @@ body {
   height: 36px;
   text-align: center;
   padding-top: 11px;
+}
+
+.motivation-info .info-more:hover {
+  background: #13C296;
 }
 
 .motivation-info .info-more-link {
@@ -450,6 +466,10 @@ body {
   padding-top: 11px;
 }
 
+.plan .text .info-more:hover {
+  background: #13C296;
+}
+
 .plan .text .info-more-link {
   font-family: "Rubik", sans-serif;
   color: #fff;
@@ -575,6 +595,10 @@ body {
   padding-top: 11px;
 }
 
+.start .info-more:hover {
+  background: #13C296;
+}
+
 .start .info-more-link {
   font-family: "Rubik", sans-serif;
   color: #fff;
@@ -600,7 +624,7 @@ body {
 
 .invest .text {
   width: 40%;
-  margin: 3% 0 0 8%;
+  margin: 3% 4% 0 8%;
 }
 
 .invest .text .invest-title {
@@ -622,7 +646,7 @@ body {
   font-size: 15px;
   line-height: 28px;
   color: #8476aa;
-  margin: 50px 0;
+  margin: 10% 0;
 }
 
 .invest .text .info {
@@ -641,6 +665,10 @@ body {
   padding-top: 11px;
 }
 
+.invest .text .info-more:hover {
+  background: #13C296;
+}
+
 .invest .text .info-more-link {
   font-family: "Rubik", sans-serif;
   color: #fff;
@@ -649,13 +677,86 @@ body {
 }
 
 .invest .img {
-  width: 28%;
-  height: 100%;
+  height: 45%;
+  position: relative;
 }
 
 .invest .img .invest-img {
-  width: 100%;
+  width: 60%;
   height: 100%;
+}
+
+.invest .img .vector {
+  position: absolute;
+  left: -60px;
+  bottom: -20px;
+}
+
+.meta {
+  width: 28%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin: 0 3% 0 0;
+}
+
+.meta .data {
+  width: 60%;
+  height: 55%;
+  background: #fff;
+  padding: 15px;
+}
+
+.meta .data .text {
+  width: 90%;
+}
+
+.meta .data .text .data-title {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 2% 0;
+}
+
+.meta .data .text .data-text {
+  opacity: 0.5;
+}
+
+.meta .data .text .total {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #13C296;
+  margin: 13% 0 0;
+}
+
+.meta .data .text .request {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  opacity: 0.5;
+  margin: 2% 0 5% 0;
+}
+
+.meta .data .text .increment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
+}
+
+.meta .data .text .increment-item {
+  width: 20%;
+}
+
+.meta .data .text .increment-item-title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 
 .help-info {
@@ -789,6 +890,7 @@ body {
   width: 71%;
   height: 46px;
   background: #303162;
+  font-family: "Rubik", sans-serif;
   padding: 10px;
   border: 0.1px solid #303162;
   border-top-left-radius: 5px;
@@ -804,6 +906,10 @@ body {
   border: 0.1px solid #f2994a;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.mailing .prompting .info .send:hover {
+  background: #13C296;
 }
 
 .mailing .prompting .spam {
@@ -827,13 +933,13 @@ body {
 
 .footer {
   width: 100%;
-  padding: 80px 0 75px 0;
+  padding: 50px 0 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  margin-top: 5%;
+  margin-top: 7%;
   background: url("../img/colorpoints.png") no-repeat;
 }
 
@@ -874,7 +980,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin: 50px auto 0;
+  margin: 10% auto 0;
 }
 
 .footer .list .pages {
