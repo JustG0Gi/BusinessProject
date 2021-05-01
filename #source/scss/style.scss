@@ -18,35 +18,44 @@ body {
 	width: 73%;
 	margin: 6% auto 0;
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
 
 	.nav {
 		width: 33%;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-around;
 		align-items: center;
 		margin: 0 0 0 5%;
 
 			&-item {
 				font-family: $font-Gilroy;
 				color: $lightgray;
+				font-size: calc(4px + (15-5) * ((100vw -320px) / (1920-320)));
+		}
+	}
+
+	.logo {
+		display: flex;
+		flex-flow: wrap;
+		width: 4.5%;
+
+		&-img {
+			width: 120%;
 		}
 	}
 
 	.entry {
 		display: flex;
 		flex-flow: wrap;
-		margin-left: auto;
+		margin:0 0 0 auto;
+		width: 25%;
 
 		.login {
-			width: 112px;
-			height: 36px;
+			width: 100%;
 			background: $white;
 			border: 1px solid $main-color;
 			border-radius: 4px;
 			text-align: center;
-			padding-top: 10px;
+			padding: 10%;
 
 			&:hover {
 				background: $purple;
@@ -55,18 +64,17 @@ body {
 
 		.login-link {
 			font-family: $font-secondary;
+			font-size: calc(4px + (11-5) * ((100vw -320px) / (1920-320)));
 			color: $main-color;
-			width: 112px;
-			height: 36px;
-			margin-right: 20px;
+			width: 41%;
+			margin-right: 9%;
 		}
 
 		.registration {
-			width: 112px;
-			height: 36px;
+			width: 100%;
 			background: $main-color;
 			text-align: center;
-			padding-top: 11px;
+			padding: 10%;
 
 			&:hover {
 				background: $green;
@@ -75,9 +83,9 @@ body {
 
 		.registration-link {
 			font-family: $font-secondary;
+			font-size: calc(4px + (11-5) * ((100vw -320px) / (1920-320)));
 			color: $white;
-			width: 112px;
-			height: 36px;
+			width: 41%;
 		}
 	}
 }
@@ -93,7 +101,7 @@ body {
 	margin: 8% 0 0 13%;
 	
    .men {
-	   margin: 0 0 0 20px;
+	   margin: 0 0 0 2%;
 		width: 58%;
 
 		.men-img {
@@ -106,23 +114,23 @@ body {
 	width: 40%;
 	display: flex;
 	flex-flow: column wrap;
-	margin-top: 40px;
+	margin-top: 4%;
 
 	.motivation-title {
 		width: 95%;
 		font-family: $font-main;
 		font-weight: bold;
-		font-size: 44px;
-		line-height: 50px;
+		font-size: calc(8px + (44-5) * ((100vw -320px) / (1920-320)));
+		line-height: 112%;
 		color: $main-text-color;
 	}
 
 	.motivation-text {
 		width: 87%;
 		font-family: $font-Gilroy;
-		font-size: 18px;
-		line-height: 22px;
-		margin: 19px 0 0;
+		font-size: calc(5px + (16-5) * ((100vw -320px) / (1920-320)));
+		line-height: 120%;
+		margin: 5% 0 0;
 		color: $secondary-text-color;
 	}
 
@@ -134,10 +142,10 @@ body {
 			border: 1px solid $main-color;
 			border-radius: 4px;
 			background: $blue;
-			width: 112px;
-			height: 36px;
+			width: 100%;
+			height: 100%;
 			text-align: center;
-			padding-top: 11px;
+			padding-top: 10%;
 
 			&:hover {
 				background: $white;
@@ -146,18 +154,19 @@ body {
 		}
 		&-demo-link {
 			font-family: $font-secondary;
+			font-size: calc(4px + (11-5) * ((100vw -320px) / (1920-320)));
 			color: $main-color;
-			width: 112px;
-			height: 36px;
+			width: 22%;
+			height: 120%;
 		}
 
 		&-more {
 			background: $main-color;
 			border-radius: 4px;
-			width: 112px;
-			height: 36px;
+			width: 100%;
+			height: 100%;
 			text-align: center;
-			padding-top: 11px;
+			padding-top: 10%;
 
 			&:hover {
 				background: $green;
@@ -166,10 +175,11 @@ body {
 		}
 		&-more-link {
 			font-family: $font-secondary;
+			font-size: calc(4px + (11-5) * ((100vw -320px) / (1920-320)));
 			color: $white;
-			width: 112px;
-			height: 36px;
-			margin-right: 20px;
+			width: 22%;
+			height: 120%;
+			margin-right: 4%;
 		}
 	}
 
@@ -181,6 +191,8 @@ body {
 
 		.video {
 			width: 28%;
+			max-height: 55%;
+			
 		}
 
 		&-info {
@@ -191,16 +203,16 @@ body {
 			width: 100%;
 			margin: 0 0 10px 23px;
 			font-family: $font-secondary;
-			font-size: 16px;
-			line-height: 22px;
+			font-size: calc(5px + (15-5) * ((100vw -320px) / (1920-320)));
+			line-height: 130%;
 			color: $secondary-text-color;
 		}
 	
 		&-link {
 			margin: 0 0 0 23px;
 			font-family: $font-secondary;
-			font-size: 14px;
-			line-height: 22px;
+			font-size: calc(4px + (12-5) * ((100vw -320px) / (1920-320)));
+			line-height: 150%;
 			color: $gray;
 		}
 	}
@@ -212,13 +224,17 @@ body {
 	width: 80%;
 	margin: 0 auto;
 	opacity: 0.4;
+
+	.brand-img {
+		width: 115%;
+	}
 }
 
 .wrap {
 	width: 100%;
 	display: flex;
 	flex-flow: wrap;
-	background: url('../img/firstleft.png') 0 0/20% 100%  no-repeat , url('../img/firstright.png') 100% 0/20% 100% no-repeat;
+	background: url('../img/firstleft.png') 0 0/20% 100% no-repeat , url('../img/firstright.png') 100% 0/20% 100% no-repeat;
 }
 
 .features {
@@ -234,8 +250,8 @@ body {
 		   width: 40%;
 		   font-family: $font-main;
 		   font-weight: bold;
-		   font-size: 42px;
-		   line-height: 50px;
+		   font-size: calc(8px + (42-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 120%;
 		   color: $main-text-color;
 		   margin: 0 auto;
 		   text-align: center;
@@ -244,8 +260,8 @@ body {
 	   .feature-text {
 		   width: 100%;
 		   font-family: $font-Gilroy;
-		   font-size: 16px;
-		   line-height: 22px;
+		   font-size: calc(5px + (16-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 130%;
 		   color: $secondary-text-color;
 		   margin: 20px auto;
 		   text-align: center;
@@ -254,18 +270,18 @@ body {
 
 	.item-text {
 		font-family: $font-Gilroy;
-		font-size: 14px;
-		line-height: 22px;
+		font-size: calc(4px + (11.5-5) * ((100vw -320px) / (1920-320)));
+		line-height: 145%;
 		color: $secondary-text-color;
 		width: 90%;
-		margin-left: 20%;
+		margin:3% 0 0 20%;
 	}
 
 	.item-title {
 		font-family: $font-Gilroy;
 		font-weight: bold;
-		font-size: 18px;
-		line-height: 22px;
+		font-size: calc(5px + (16-5) * ((100vw -320px) / (1920-320)));
+		line-height: 120%;
 		color: $main-text-color;
 		width: 80%;
 		margin-left: 12%;
@@ -281,7 +297,7 @@ body {
 			display: flex;
 			flex-flow: wrap;
 			width: 27%;
-			margin: 40px auto 0;
+			margin: 5% auto 0;
 		}
 	}
 }
@@ -297,14 +313,14 @@ body {
 
 	.text {
 		width: 30%;
-		margin-right: 35px;
+		margin-right: 4%;
 
 		.plan-title {
 			width: 100%;
 			font-family: $font-main;
 		   font-weight: bold;
-		   font-size: 42px;
-		   line-height: 50px;
+		   font-size: calc(8px + (45-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 120%;
 		   color: $main-text-color;
 
 			.insert {
@@ -315,8 +331,8 @@ body {
 		.plan-text {
 			width: 100%;
 			font-family: $font-Gilroy;
-		   font-size: 15px;
-		   line-height: 22px;
+		   font-size: calc(5px + (13-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 140%;
 		   color: $secondary-text-color;
 			margin-top: 10%;
 		}
@@ -329,10 +345,9 @@ body {
 				margin-right: 20px;
 				background: $main-color;
 				border-radius: 4px;
-				width: 112px;
-				height: 36px;
+				width: 100%;
 				text-align: center;
-				padding-top: 11px;
+				padding: 10%;
 
 				&:hover {
 					background: $green;
@@ -341,20 +356,18 @@ body {
 			}
 			&-more-link {
 				font-family: $font-secondary;
+				font-size: calc(4px + (12-5) * ((100vw -320px) / (1920-320)));
 				color: $white;
-				width: 112px;
-			   height: 36px;
+				width: 25%;
 			}
 	   }
    }
 
 	.img {
-		width: 28%;
-		height: 100%;
+		width: 26%;
 
 		.plan-img {
 			width: 100%;
-			height: 100%;
 		}
 	}
 }
@@ -374,8 +387,8 @@ body {
 		   width: 60%;
 		   font-family: $font-main;
 		   font-weight: bold;
-		   font-size: 36px;
-		   line-height: 42px;
+		   font-size: calc(7px + (42-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 120%;
 		   color: $main-text-color;
 		   text-align: center;
 		   margin: 0 auto;
@@ -386,10 +399,10 @@ body {
 	   }
 
 	   .save-text {
-		   width: 33%;
+		   width: 36%;
 		   font-family: $font-Gilroy;
-		   font-size: 15px;
-		   line-height: 20px;
+		   font-size: calc(5px + (14-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 130%;
 		   color: $secondary-text-color;
 		   margin: 3% auto 6%;
 	   }
@@ -401,16 +414,16 @@ body {
 	   &-title {
 		   font-family: $font-main;
 		   font-weight: bold;
-		   font-size: 36px;
-		   line-height: 42px;
+		   font-size: calc(7px + (40-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 120%;
 		   color: $main-text-color;
 		   text-align: center;
 	   }
 
 	   &-text {
 		font-family: $font-Gilroy;
-		font-size: 15px;
-		line-height: 20px;
+		font-size: calc(5px + (13-5) * ((100vw -320px) / (1920-320)));
+		line-height: 130%;
 		color: $secondary-text-color;
 		text-align: center;
 		margin-top: 20px;
@@ -429,8 +442,8 @@ body {
 	&-title {
 		font-family: $font-main;
 		font-weight: bold;
-		font-size: 42px;
-		line-height: 50px;
+		font-size: calc(8px + (44-5) * ((100vw -320px) / (1920-320)));
+		line-height: 120%;
 		color: $main-text-color;
 		text-align: center;
 		margin: 0 auto;
@@ -448,10 +461,9 @@ body {
 		&-more {
 			background: $main-color;
 			border-radius: 4px;
-			width: 112px;
-			height: 36px;
+			width: 100%;
 			text-align: center;
-			padding-top: 11px;
+			padding: 10%;
 
 			&:hover {
 				background: $green;
@@ -460,10 +472,10 @@ body {
 		}
 		&-more-link {
 			font-family: $font-secondary;
+			font-size: calc(3px + (12-5) * ((100vw -320px) / (1920-320)));
 			color: $white;
 			margin: 0 auto;
-			width: 112px;
-			height: 36px;
+			width: 9.5%;
 		}
 	}
 
@@ -472,21 +484,21 @@ body {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: center;
-	padding: 30px 0;
+	padding: 4% 0;
 	width: 100%;
 	margin: 5% 0 0;
 	background: url('../img/land.png') 100% 100%/45% 90% no-repeat;
 
 	.text {
 		width: 40%;
-		margin:3% 4% 0 8%;
+		margin:3% 0 0 10%;
 
 	   .invest-title {
 		   width: 80%;
 		   font-family: $font-main;
 		   font-weight: bold;
-		   font-size: 42px;
-		   line-height: 50px;
+		   font-size: calc(8px + (44-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 120%;
 		   color: $main-text-color;
 	   }
 
@@ -497,8 +509,8 @@ body {
 	   .invest-text {
 		   width: 75%;
 		   font-family: $font-Gilroy;
-		   font-size: 15px;
-		   line-height: 28px;
+		   font-size: calc(5px + (14-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 160%;
 		   color: $secondary-text-color;
 		   margin: 10% 0;
 	   }
@@ -510,10 +522,9 @@ body {
 			&-more {
 				background: $main-color;
 				border-radius: 4px;
-				width: 112px;
-				height: 36px;
+				width: 100%;
 				text-align: center;
-				padding-top: 11px;
+				padding: 10%;
 
 				&:hover {
 					background: $green;
@@ -522,43 +533,39 @@ body {
 
 			&-more-link {
 				font-family: $font-secondary;
+				font-size: calc(4px + (12-5) * ((100vw -320px) / (1920-320)));
 				color: $white;
-				width: 112px;
-				height: 36px;
+				width: 19%;
 			}
       }
 	}
 
    .img {
-	   height: 45%;
+		width: 100%;
 		position: relative;
 
 		.invest-img {
-			width: 60%;
-			height: 100%;
+			width: 55%;
 		}
 
 		.vector {
 			position: absolute;
-			left: -50px;
-			bottom: -5px;
+			left: -11%;
+			bottom: 5%;
 			width: 20%;
 		}
    }
 }
 
 .meta {
-	width: 28%;
-	height: 100%;
+	width: 32%;
 	display: flex;
 	flex-flow: column wrap;
-	margin: 0 3% 0 0;
 
 	.data {
-		width: 60%;
-		height: 55%;
+		width: 55%;
 		background: $white;
-		padding: 15px;
+		padding: 3%;
 		border-bottom-left-radius: 9px;
 		border-bottom-right-radius: 9px;
 		position: relative;
@@ -568,25 +575,27 @@ body {
 
 			.data-title {
 				font-family: $font-main;
-				font-size: 18px;
+				font-size: calc(5px + (18-5) * ((100vw -320px) / (1920-320)));
 				font-weight: bold;
 				margin: 0 0 2% 0;
 			}
 
 			.data-text {
+				font-family: $font-secondary;
+				font-size: calc(3px + (12-5) * ((100vw -320px) / (1920-320)));
 				opacity: 0.5;
 			}
 
 			.total {
 				font-family: $font-main;
-				font-size: 24px;
+				font-size: calc(6px + (22-5) * ((100vw -320px) / (1920-320)));
 				color: $green;
 				margin: 13% 0 0;
 			}
 
 			.request {
 				font-family: $font-secondary;
-				font-size: 15px;
+				font-size: calc(3px + (14-5) * ((100vw -320px) / (1920-320)));
 				opacity: 0.5;
 				margin: 2% 0 5% 0;
 			}
@@ -606,11 +615,13 @@ body {
 
 				&-title {
 					font-family: $font-main;
+					font-size: calc(4px + (12-5) * ((100vw -320px) / (1920-320)));
 					font-weight: bold;
 				}
 
 				&-text {
 					font-family: $font-secondary;
+					font-size: calc(3px + (11-5) * ((100vw -320px) / (1920-320)));
 					opacity: 0.5;
 				}
 			}
@@ -630,13 +641,13 @@ body {
 			&-title {
 				font-family: $font-main;
 				font-weight: bold;
-				font-size: 15px;
+				font-size: calc(4px + (17-5) * ((100vw -320px) / (1920-320)));
 				margin: 0 0 4% 0;
 			}
 
 			&-text {
 				font-family: $font-secondary;
-				font-size: 10px;
+				font-size: calc(3px + (10-5) * ((100vw -320px) / (1920-320)));
 			}
 		}
 	}
@@ -652,11 +663,9 @@ body {
 
 	.img {
 		width: 35%;
-		height: 90%;
 
 		.help-info-img {
 			width: 100%;
-			height: 100%;
 		}
 	}
 
@@ -669,37 +678,41 @@ body {
 	   .help-title {
 			font-family: $font-main;
 		   font-weight: bold;
-		   font-size: 26px;
-		   line-height: 32px;
+		   font-size: calc(6px + (28-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 125%;
 		   color: $main-text-color;
 		}
 
 		.help-text {
 			width: 70%;
 			font-family: $font-Gilroy;
-		   font-size: 15px;
-		   line-height: 20px;
+		   font-size: calc(4px + (14-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 130%;
 		   color: $secondary-text-color;
 		}
 
 		.help-item {
 			width: 40%;
-			margin: 20px 30px 0 0;
+			margin: 5% 5% 0 0;
 
 			&-title {
 				font-family: $font-main;
 		      font-weight: bold;
-		      font-size: 15px;
+		      font-size: calc(5px + (16-5) * ((100vw -320px) / (1920-320)));
 		      color: $main-text-color;
-				margin: 20px 0 10px;
+				margin: 10% 0 5%;
 			}
 
 			&-text {
 				font-family: $font-Gilroy;
-		      font-size: 15px;
-		      line-height: 20px;
+		      font-size: calc(4px + (13-5) * ((100vw -320px) / (1920-320)));
+		      line-height: 130%;
 		      color: $secondary-text-color;
 				width: 95%;
+			}
+
+			.help-img {
+				width: 18%;
 			}
 		}
 	}
@@ -715,7 +728,7 @@ body {
 	   flex-flow: column wrap;
 	   align-items: center;
 	   justify-content: center;
-	   margin: 50px auto 0;
+	   margin: 3% auto 0;
 	   background: $darkblue;
 	   border-radius: 5px;
 	   padding: 2.5% 0;
@@ -723,34 +736,34 @@ body {
 	   &-title {
 		   font-family: $font-secondary;
 		   font-weight: 500;
-		   font-size: 36px;
-		   line-height: 43px;
+		   font-size: calc(7px + (37-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 125%;
 		   color: $main-color;
 	   }
 
 	   &-text {
 		   width: 40%;
 		   font-family: $font-secondary;
-		   font-size: 16px;
-		   line-height: 22px;
+		   font-size: calc(4px + (15-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 130%;
 		   color: $gray-blue;
 		   text-align: center;
-		   margin: 20px 0 0;
+		   margin: 3% 0 0;
 	   }
 
 	   .info {
 		   display: flex;
 		   flex-flow: wrap;
 		   width: 35%;
-		   height: 48px;
-		   margin: 40px auto 0;
+		   height: 5%;
+		   margin: 4% auto 0;
 
 		   .mail {
 			   width: 71%;
-			   height: 46px;
 			   background: $blue-gray;
 				font-family: $font-secondary;
-			   padding: 10px;
+				font-size: calc(3px + (10-5) * ((100vw -320px) / (1920-320)));
+			   padding: 4%;
 			   border: 0.1px solid $blue-gray;
 			   border-top-left-radius: 5px;
 			   border-bottom-left-radius: 5px;
@@ -759,7 +772,8 @@ body {
 
 		   .send {
 			   width: 29%;
-			   height: 46px;
+				font-family: $font-secondary;
+				font-size: calc(4px + (12-5) * ((100vw -320px) / (1920-320)));
 		      background: $main-color;
 		      color: $white;
 			   border: 0.1px solid $main-color;
@@ -774,10 +788,10 @@ body {
 
 	   .spam {
 		   font-family: $font-Gilroy;
-		   font-size: 14px;
-		   line-height: 20px;
+		   font-size: calc(3px + (13-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 130%;
 		   color: $secondary-text-color;
-			margin-top: 15px;
+			margin-top: 2.5%;
 	   }
    }
 }
@@ -787,12 +801,12 @@ body {
 	display: flex;
 	flex-flow: wrap;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 2%;
 }
 
 .footer {
 	width: 100%;
-	padding: 50px 0 50px 0;
+	padding: 3.3% 0;
 	display: flex;
 	flex-flow: wrap;
 	margin-top: 7%;
@@ -801,10 +815,10 @@ body {
 	.caption {
 		font-family: $font-main;
 		font-weight: bold;
-		font-size: 26px;
-		line-height: 32px;
+		font-size: calc(6px + (26-5) * ((100vw -320px) / (1920-320)));
+		line-height: 130%;
 		color: $main-color;
-		margin: 40px 0 0;
+		margin: 5% 0 0;
 	}
 
 	.socials {
@@ -812,11 +826,14 @@ body {
 		flex-flow: wrap;
 		justify-content: space-between;
 		width: 15%;
-		margin: 40px 0 0 auto;
+		margin: 4% 0 0 auto;
 
-		.social-img {
-			width: 40px;
-			height: 40px;
+		.social-link {
+			width: 25%;
+
+		   .social-img {
+			   width: 100%;
+		   }
 		}
 	}
 
@@ -835,20 +852,20 @@ body {
 
 			.page-item {
 				font-family: $font-main;
-				font-size: 15px;
-		      line-height: 20px;
+				font-size: calc(4px + (14-5) * ((100vw -320px) / (1920-320)));
+		      line-height: 120%;
 				color: $white;
-				margin: 15px 0 0;
+				margin: 13% 0 0;
 			}
 		}
 
 		.lead {
 			font-family: $font-main;
-			font-size: 15px;
-		   line-height: 20px;
+			font-size: calc(4px + (15-5) * ((100vw -320px) / (1920-320)));
+		   line-height: 120%;
 			color: $white;
 			font-weight: bold;
-			margin-bottom: 30px;
+			margin-bottom: 23%;
 		}
 	}
 
@@ -859,5 +876,10 @@ body {
 		width: 40%;
 		color: $darkgray;
 		margin: 9% auto 0;
+
+		&-text {
+			font-family: $font-main;
+			font-size: calc(3px + (12-5) * ((100vw -320px) / (1920-320)));
+		}
 	}
 }

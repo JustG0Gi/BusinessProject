@@ -92,13 +92,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 .header .nav {
@@ -106,9 +99,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -118,6 +110,20 @@ body {
 .header .nav-item {
   font-family: "Gilroy-SemiBold", sans-serif;
   color: #b5b5b5;
+  font-size: calc(4px + (15-5) * ((100vw -320px) / (1920-320)));
+}
+
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 4.5%;
+}
+
+.header .logo-img {
+  width: 120%;
 }
 
 .header .entry {
@@ -126,17 +132,17 @@ body {
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  margin-left: auto;
+  margin: 0 0 0 auto;
+  width: 25%;
 }
 
 .header .entry .login {
-  width: 112px;
-  height: 36px;
+  width: 100%;
   background: #fff;
   border: 1px solid #f2994a;
   border-radius: 4px;
   text-align: center;
-  padding-top: 10px;
+  padding: 10%;
 }
 
 .header .entry .login:hover {
@@ -145,18 +151,17 @@ body {
 
 .header .entry .login-link {
   font-family: "Rubik", sans-serif;
+  font-size: calc(4px + (11-5) * ((100vw -320px) / (1920-320)));
   color: #f2994a;
-  width: 112px;
-  height: 36px;
-  margin-right: 20px;
+  width: 41%;
+  margin-right: 9%;
 }
 
 .header .entry .registration {
-  width: 112px;
-  height: 36px;
+  width: 100%;
   background: #f2994a;
   text-align: center;
-  padding-top: 11px;
+  padding: 10%;
 }
 
 .header .entry .registration:hover {
@@ -165,9 +170,9 @@ body {
 
 .header .entry .registration-link {
   font-family: "Rubik", sans-serif;
+  font-size: calc(4px + (11-5) * ((100vw -320px) / (1920-320)));
   color: #fff;
-  width: 112px;
-  height: 36px;
+  width: 41%;
 }
 
 .main {
@@ -188,7 +193,7 @@ body {
 }
 
 .motivation .men {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 2%;
   width: 58%;
 }
 
@@ -205,24 +210,24 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  margin-top: 40px;
+  margin-top: 4%;
 }
 
 .motivation-info .motivation-title {
   width: 95%;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 44px;
-  line-height: 50px;
+  font-size: calc(8px + (44-5) * ((100vw -320px) / (1920-320)));
+  line-height: 112%;
   color: #99efd0;
 }
 
 .motivation-info .motivation-text {
   width: 87%;
   font-family: "Gilroy-SemiBold", sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  margin: 19px 0 0;
+  font-size: calc(5px + (16-5) * ((100vw -320px) / (1920-320)));
+  line-height: 120%;
+  margin: 5% 0 0;
   color: #8476aa;
 }
 
@@ -237,10 +242,10 @@ body {
   border: 1px solid #f2994a;
   border-radius: 4px;
   background: #101144;
-  width: 112px;
-  height: 36px;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  padding-top: 11px;
+  padding-top: 10%;
 }
 
 .motivation-info .info-demo:hover {
@@ -249,18 +254,19 @@ body {
 
 .motivation-info .info-demo-link {
   font-family: "Rubik", sans-serif;
+  font-size: calc(4px + (11-5) * ((100vw -320px) / (1920-320)));
   color: #f2994a;
-  width: 112px;
-  height: 36px;
+  width: 22%;
+  height: 120%;
 }
 
 .motivation-info .info-more {
   background: #f2994a;
   border-radius: 4px;
-  width: 112px;
-  height: 36px;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  padding-top: 11px;
+  padding-top: 10%;
 }
 
 .motivation-info .info-more:hover {
@@ -269,10 +275,11 @@ body {
 
 .motivation-info .info-more-link {
   font-family: "Rubik", sans-serif;
+  font-size: calc(4px + (11-5) * ((100vw -320px) / (1920-320)));
   color: #fff;
-  width: 112px;
-  height: 36px;
-  margin-right: 20px;
+  width: 22%;
+  height: 120%;
+  margin-right: 4%;
 }
 
 .motivation-info .preview {
@@ -287,6 +294,7 @@ body {
 
 .motivation-info .preview .video {
   width: 28%;
+  max-height: 55%;
 }
 
 .motivation-info .preview-info {
@@ -297,16 +305,16 @@ body {
   width: 100%;
   margin: 0 0 10px 23px;
   font-family: "Rubik", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: calc(5px + (15-5) * ((100vw -320px) / (1920-320)));
+  line-height: 130%;
   color: #8476aa;
 }
 
 .motivation-info .preview-link {
   margin: 0 0 0 23px;
   font-family: "Rubik", sans-serif;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: calc(4px + (12-5) * ((100vw -320px) / (1920-320)));
+  line-height: 150%;
   color: #6d6d78;
 }
 
@@ -319,6 +327,10 @@ body {
   width: 80%;
   margin: 0 auto;
   opacity: 0.4;
+}
+
+.brands .brand-img {
+  width: 115%;
 }
 
 .wrap {
@@ -349,8 +361,8 @@ body {
   width: 40%;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 42px;
-  line-height: 50px;
+  font-size: calc(8px + (42-5) * ((100vw -320px) / (1920-320)));
+  line-height: 120%;
   color: #99efd0;
   margin: 0 auto;
   text-align: center;
@@ -359,8 +371,8 @@ body {
 .features .text .feature-text {
   width: 100%;
   font-family: "Gilroy-SemiBold", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: calc(5px + (16-5) * ((100vw -320px) / (1920-320)));
+  line-height: 130%;
   color: #8476aa;
   margin: 20px auto;
   text-align: center;
@@ -368,18 +380,18 @@ body {
 
 .features .item-text {
   font-family: "Gilroy-SemiBold", sans-serif;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: calc(4px + (11.5-5) * ((100vw -320px) / (1920-320)));
+  line-height: 145%;
   color: #8476aa;
   width: 90%;
-  margin-left: 20%;
+  margin: 3% 0 0 20%;
 }
 
 .features .item-title {
   font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: calc(5px + (16-5) * ((100vw -320px) / (1920-320)));
+  line-height: 120%;
   color: #99efd0;
   width: 80%;
   margin-left: 12%;
@@ -402,7 +414,7 @@ body {
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   width: 27%;
-  margin: 40px auto 0;
+  margin: 5% auto 0;
 }
 
 .plan {
@@ -424,15 +436,15 @@ body {
 
 .plan .text {
   width: 30%;
-  margin-right: 35px;
+  margin-right: 4%;
 }
 
 .plan .text .plan-title {
   width: 100%;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 42px;
-  line-height: 50px;
+  font-size: calc(8px + (45-5) * ((100vw -320px) / (1920-320)));
+  line-height: 120%;
   color: #99efd0;
 }
 
@@ -443,8 +455,8 @@ body {
 .plan .text .plan-text {
   width: 100%;
   font-family: "Gilroy-SemiBold", sans-serif;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: calc(5px + (13-5) * ((100vw -320px) / (1920-320)));
+  line-height: 140%;
   color: #8476aa;
   margin-top: 10%;
 }
@@ -460,10 +472,9 @@ body {
   margin-right: 20px;
   background: #f2994a;
   border-radius: 4px;
-  width: 112px;
-  height: 36px;
+  width: 100%;
   text-align: center;
-  padding-top: 11px;
+  padding: 10%;
 }
 
 .plan .text .info-more:hover {
@@ -472,19 +483,17 @@ body {
 
 .plan .text .info-more-link {
   font-family: "Rubik", sans-serif;
+  font-size: calc(4px + (12-5) * ((100vw -320px) / (1920-320)));
   color: #fff;
-  width: 112px;
-  height: 36px;
+  width: 25%;
 }
 
 .plan .img {
-  width: 28%;
-  height: 100%;
+  width: 26%;
 }
 
 .plan .img .plan-img {
   width: 100%;
-  height: 100%;
 }
 
 .saving {
@@ -508,8 +517,8 @@ body {
   width: 60%;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: calc(7px + (42-5) * ((100vw -320px) / (1920-320)));
+  line-height: 120%;
   color: #99efd0;
   text-align: center;
   margin: 0 auto;
@@ -520,10 +529,10 @@ body {
 }
 
 .saving .text .save-text {
-  width: 33%;
+  width: 36%;
   font-family: "Gilroy-SemiBold", sans-serif;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: calc(5px + (14-5) * ((100vw -320px) / (1920-320)));
+  line-height: 130%;
   color: #8476aa;
   margin: 3% auto 6%;
 }
@@ -535,16 +544,16 @@ body {
 .saving .save-item-title {
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: calc(7px + (40-5) * ((100vw -320px) / (1920-320)));
+  line-height: 120%;
   color: #99efd0;
   text-align: center;
 }
 
 .saving .save-item-text {
   font-family: "Gilroy-SemiBold", sans-serif;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: calc(5px + (13-5) * ((100vw -320px) / (1920-320)));
+  line-height: 130%;
   color: #8476aa;
   text-align: center;
   margin-top: 20px;
@@ -567,8 +576,8 @@ body {
 .start-title {
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 42px;
-  line-height: 50px;
+  font-size: calc(8px + (44-5) * ((100vw -320px) / (1920-320)));
+  line-height: 120%;
   color: #99efd0;
   text-align: center;
   margin: 0 auto;
@@ -589,10 +598,9 @@ body {
 .start .info-more {
   background: #f2994a;
   border-radius: 4px;
-  width: 112px;
-  height: 36px;
+  width: 100%;
   text-align: center;
-  padding-top: 11px;
+  padding: 10%;
 }
 
 .start .info-more:hover {
@@ -601,10 +609,10 @@ body {
 
 .start .info-more-link {
   font-family: "Rubik", sans-serif;
+  font-size: calc(3px + (12-5) * ((100vw -320px) / (1920-320)));
   color: #fff;
   margin: 0 auto;
-  width: 112px;
-  height: 36px;
+  width: 9.5%;
 }
 
 .invest {
@@ -616,7 +624,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 0;
+  padding: 4% 0;
   width: 100%;
   margin: 5% 0 0;
   background: url("../img/land.png") 100% 100%/45% 90% no-repeat;
@@ -624,15 +632,15 @@ body {
 
 .invest .text {
   width: 40%;
-  margin: 3% 4% 0 8%;
+  margin: 3% 0 0 10%;
 }
 
 .invest .text .invest-title {
   width: 80%;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 42px;
-  line-height: 50px;
+  font-size: calc(8px + (44-5) * ((100vw -320px) / (1920-320)));
+  line-height: 120%;
   color: #99efd0;
 }
 
@@ -643,8 +651,8 @@ body {
 .invest .text .invest-text {
   width: 75%;
   font-family: "Gilroy-SemiBold", sans-serif;
-  font-size: 15px;
-  line-height: 28px;
+  font-size: calc(5px + (14-5) * ((100vw -320px) / (1920-320)));
+  line-height: 160%;
   color: #8476aa;
   margin: 10% 0;
 }
@@ -659,10 +667,9 @@ body {
 .invest .text .info-more {
   background: #f2994a;
   border-radius: 4px;
-  width: 112px;
-  height: 36px;
+  width: 100%;
   text-align: center;
-  padding-top: 11px;
+  padding: 10%;
 }
 
 .invest .text .info-more:hover {
@@ -671,31 +678,29 @@ body {
 
 .invest .text .info-more-link {
   font-family: "Rubik", sans-serif;
+  font-size: calc(4px + (12-5) * ((100vw -320px) / (1920-320)));
   color: #fff;
-  width: 112px;
-  height: 36px;
+  width: 19%;
 }
 
 .invest .img {
-  height: 45%;
+  width: 100%;
   position: relative;
 }
 
 .invest .img .invest-img {
-  width: 60%;
-  height: 100%;
+  width: 55%;
 }
 
 .invest .img .vector {
   position: absolute;
-  left: -50px;
-  bottom: -5px;
+  left: -11%;
+  bottom: 5%;
   width: 20%;
 }
 
 .meta {
-  width: 28%;
-  height: 100%;
+  width: 32%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -703,14 +708,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  margin: 0 3% 0 0;
 }
 
 .meta .data {
-  width: 60%;
-  height: 55%;
+  width: 55%;
   background: #fff;
-  padding: 15px;
+  padding: 3%;
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
   position: relative;
@@ -722,25 +725,27 @@ body {
 
 .meta .data .text .data-title {
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: calc(5px + (18-5) * ((100vw -320px) / (1920-320)));
   font-weight: bold;
   margin: 0 0 2% 0;
 }
 
 .meta .data .text .data-text {
+  font-family: "Rubik", sans-serif;
+  font-size: calc(3px + (12-5) * ((100vw -320px) / (1920-320)));
   opacity: 0.5;
 }
 
 .meta .data .text .total {
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: calc(6px + (22-5) * ((100vw -320px) / (1920-320)));
   color: #13C296;
   margin: 13% 0 0;
 }
 
 .meta .data .text .request {
   font-family: "Rubik", sans-serif;
-  font-size: 15px;
+  font-size: calc(3px + (14-5) * ((100vw -320px) / (1920-320)));
   opacity: 0.5;
   margin: 2% 0 5% 0;
 }
@@ -766,11 +771,13 @@ body {
 
 .meta .data .increment-item-title {
   font-family: "Inter", sans-serif;
+  font-size: calc(4px + (12-5) * ((100vw -320px) / (1920-320)));
   font-weight: bold;
 }
 
 .meta .data .increment-item-text {
   font-family: "Rubik", sans-serif;
+  font-size: calc(3px + (11-5) * ((100vw -320px) / (1920-320)));
   opacity: 0.5;
 }
 
@@ -789,13 +796,13 @@ body {
 .meta .data .popup-title {
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: calc(4px + (17-5) * ((100vw -320px) / (1920-320)));
   margin: 0 0 4% 0;
 }
 
 .meta .data .popup-text {
   font-family: "Rubik", sans-serif;
-  font-size: 10px;
+  font-size: calc(3px + (10-5) * ((100vw -320px) / (1920-320)));
 }
 
 .help-info {
@@ -814,12 +821,10 @@ body {
 
 .help-info .img {
   width: 35%;
-  height: 90%;
 }
 
 .help-info .img .help-info-img {
   width: 100%;
-  height: 100%;
 }
 
 .help-info .text {
@@ -835,38 +840,42 @@ body {
 .help-info .text .help-title {
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
+  font-size: calc(6px + (28-5) * ((100vw -320px) / (1920-320)));
+  line-height: 125%;
   color: #99efd0;
 }
 
 .help-info .text .help-text {
   width: 70%;
   font-family: "Gilroy-SemiBold", sans-serif;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: calc(4px + (14-5) * ((100vw -320px) / (1920-320)));
+  line-height: 130%;
   color: #8476aa;
 }
 
 .help-info .text .help-item {
   width: 40%;
-  margin: 20px 30px 0 0;
+  margin: 5% 5% 0 0;
 }
 
 .help-info .text .help-item-title {
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: calc(5px + (16-5) * ((100vw -320px) / (1920-320)));
   color: #99efd0;
-  margin: 20px 0 10px;
+  margin: 10% 0 5%;
 }
 
 .help-info .text .help-item-text {
   font-family: "Gilroy-SemiBold", sans-serif;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: calc(4px + (13-5) * ((100vw -320px) / (1920-320)));
+  line-height: 130%;
   color: #8476aa;
   width: 95%;
+}
+
+.help-info .text .help-item .help-img {
+  width: 18%;
 }
 
 .mailing {
@@ -890,7 +899,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 50px auto 0;
+  margin: 3% auto 0;
   background: #191d50;
   border-radius: 5px;
   padding: 2.5% 0;
@@ -899,19 +908,19 @@ body {
 .mailing .prompting-title {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 43px;
+  font-size: calc(7px + (37-5) * ((100vw -320px) / (1920-320)));
+  line-height: 125%;
   color: #f2994a;
 }
 
 .mailing .prompting-text {
   width: 40%;
   font-family: "Rubik", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: calc(4px + (15-5) * ((100vw -320px) / (1920-320)));
+  line-height: 130%;
   color: #95a1bb;
   text-align: center;
-  margin: 20px 0 0;
+  margin: 3% 0 0;
 }
 
 .mailing .prompting .info {
@@ -921,16 +930,16 @@ body {
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   width: 35%;
-  height: 48px;
-  margin: 40px auto 0;
+  height: 5%;
+  margin: 4% auto 0;
 }
 
 .mailing .prompting .info .mail {
   width: 71%;
-  height: 46px;
   background: #303162;
   font-family: "Rubik", sans-serif;
-  padding: 10px;
+  font-size: calc(3px + (10-5) * ((100vw -320px) / (1920-320)));
+  padding: 4%;
   border: 0.1px solid #303162;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -939,7 +948,8 @@ body {
 
 .mailing .prompting .info .send {
   width: 29%;
-  height: 46px;
+  font-family: "Rubik", sans-serif;
+  font-size: calc(4px + (12-5) * ((100vw -320px) / (1920-320)));
   background: #f2994a;
   color: #fff;
   border: 0.1px solid #f2994a;
@@ -953,10 +963,10 @@ body {
 
 .mailing .prompting .spam {
   font-family: "Gilroy-SemiBold", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: calc(3px + (13-5) * ((100vw -320px) / (1920-320)));
+  line-height: 130%;
   color: #8476aa;
-  margin-top: 15px;
+  margin-top: 2.5%;
 }
 
 .container {
@@ -967,12 +977,12 @@ body {
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 2%;
 }
 
 .footer {
   width: 100%;
-  padding: 50px 0 50px 0;
+  padding: 3.3% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -985,10 +995,10 @@ body {
 .footer .caption {
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
+  font-size: calc(6px + (26-5) * ((100vw -320px) / (1920-320)));
+  line-height: 130%;
   color: #f2994a;
-  margin: 40px 0 0;
+  margin: 5% 0 0;
 }
 
 .footer .socials {
@@ -1001,12 +1011,15 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 15%;
-  margin: 40px 0 0 auto;
+  margin: 4% 0 0 auto;
 }
 
-.footer .socials .social-img {
-  width: 40px;
-  height: 40px;
+.footer .socials .social-link {
+  width: 25%;
+}
+
+.footer .socials .social-link .social-img {
+  width: 100%;
 }
 
 .footer .list {
@@ -1036,19 +1049,19 @@ body {
 
 .footer .list .pages .page-item {
   font-family: "Inter", sans-serif;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: calc(4px + (14-5) * ((100vw -320px) / (1920-320)));
+  line-height: 120%;
   color: #fff;
-  margin: 15px 0 0;
+  margin: 13% 0 0;
 }
 
 .footer .list .lead {
   font-family: "Inter", sans-serif;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: calc(4px + (15-5) * ((100vw -320px) / (1920-320)));
+  line-height: 120%;
   color: #fff;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 23%;
 }
 
 .footer .copyright {
@@ -1062,4 +1075,9 @@ body {
   width: 40%;
   color: #8d8d8d;
   margin: 9% auto 0;
+}
+
+.footer .copyright-text {
+  font-family: "Inter", sans-serif;
+  font-size: calc(3px + (12-5) * ((100vw -320px) / (1920-320)));
 }
